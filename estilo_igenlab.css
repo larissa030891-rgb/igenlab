@@ -1,0 +1,143 @@
+/* RESET PADRÃO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Garante que padding e border não aumentem o tamanho do elemento */
+}
+
+/* VARIAVEIS DE CORES */
+:root {
+    --cor-principal: rgb(6, 22, 95); /* Azul Escuro */
+    --cor-secundaria: rgb(64, 64, 203); /* Azul Claro para hover/destaque */
+    --cor-fundo: rgb(240, 240, 240); /* Fundo mais claro e suave */
+    --cor-texto-claro: white;
+    --cor-texto-escuro: rgb(51, 51, 51); /* Texto preto mais suave */
+    --cor-atencao: #e74c3c; /* Vermelho para contador/alerta */
+}
+
+/* CORPO DA PÁGINA */
+body {
+    background-color: var(--cor-fundo);
+    font-family: 'Roboto', sans-serif; /* Usando a nova fonte */
+    color: var(--cor-texto-escuro);
+}
+
+/* CABEÇALHO */
+header {
+    background-color: var(--cor-principal);
+    padding: 20px;
+    color: var(--cor-texto-claro);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+}
+
+header h1 {
+    font-weight: 700;
+}
+
+/* BARRA DE NAVEGAÇÃO - Usando Flexbox para alinhar itens */
+.barra-navegacao {
+    display: flex;
+    justify-content: space-between; /* Espaça links e contador */
+    align-items: center;
+    padding: 15px 30px;
+    background-color: var(--cor-texto-claro); /* Fundo branco para contraste */
+    border-bottom: 1px solid #ddd;
+}
+
+/* LINKS DE NAVEGAÇÃO */
+.links-nav a {
+    font-size: 16px;
+    color: var(--cor-principal);
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-right: 15px;
+    transition: all 0.3s ease; /* Transição suave */
+    font-weight: 700;
+    display: flex;
+    gap: 30px;
+}
+
+.links-nav a:hover {
+    color: var(--cor-secundaria);
+    background-color: #eee;
+    border-radius: 4px;
+}
+
+/* CONTADOR */
+.contador {
+    font-size: 18px;
+    color: var(--cor-atencao);
+    font-weight: 700;
+    /* Remover margin: 25px; para alinhamento correto */
+}
+
+/* SEÇÕES (Geral) */
+.container {
+    padding: 20px;
+}
+
+/* SEÇÃO DE FILTROS */
+.secao-filtros {
+    background-color: var(--cor-texto-claro);
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Sombra mais sutil */
+}
+
+.titulo-secao {
+    color: var(--cor-texto-escuro); /* Cor de texto padrão */
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+}
+
+/* LISTA DE FILTROS - Usando Flexbox para alinhamento horizontal */
+.filtro-lista {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; /* Permite quebrar linha se não couber */
+    padding: 5px 0;
+}
+
+.filtro-lista li {
+    display: block; /* Volta para block para melhor controle do padding */
+    margin-right: 10px;
+    margin-bottom: 8px;
+    padding: 6px 12px;
+    border: 1px solid var(--cor-principal);
+    border-radius: 20px; /* Transforma em "pílulas" */
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none; /* Remove o sublinhado do seu CSS original */
+    color: var(--cor-principal);
+    font-weight: 500;
+}
+
+.filtro-lista li:hover {
+    background-color: var(--cor-principal);
+    color: var(--cor-texto-claro);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Conteúdo Principal */
+.conteudo-principal {
+     background-color: var(--cor-texto-claro);
+    padding: 20px;
+    border-radius: 8px;
+    min-height: 400px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-top: 20px;
+}
+
+/* RODAPÉ */
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+    font-size: 12px;
+    color: #999;
+}

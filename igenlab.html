@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Montagem de placa - PRA</title>
+    <link rel="stylesheet" href="estilo_igenlab.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Montagem de placa - PRA</h1>
+    </header>
+
+    <nav class="barra-navegacao">
+        <div class="links-nav">
+            <a href="#">ONELAMBDA</a>
+            <a href="#">IMMUCOR</a>
+        </div>
+        <span class="contador">QUANTIDADE TOTAL DE AMOSTRAS: **254**</span>
+    </nav>
+
+    <main class="container">
+        <section class="secao-filtros">
+            <h2 class="titulo-secao">FILTROS DE DADOS</h2>
+            <ul class="filtro-lista"> 
+                <li>EXAME</li>
+                <li>MOTIVAÇÃO</li>
+                <li>TRATAMENTO</li>
+            </ul>
+        </section>
+
+        <section class="secao-filtros">
+            <h2 class="titulo-secao">ORDENAR POR</h2>
+            <ul class="filtro-lista">
+                <li>ROTINA</li>
+                <li>RENOVAÇÃO</li>
+                <li>MAIS ANTIGAS</li>
+                <li>MAIS RECENTES</li>
+                <li>TODAS</li>
+            </ul>
+        </section>
+        
+       <section class="conteudo-principal">
+    <h2>Lista de Amostras (254)</h2>
+    
+    <table>
+        <thead>
+            <tr>
+                <th><input type="checkbox" id="selecionar-todos"></th> <th>ID da Amostra</th>
+                <th>Exame</th>
+                <th>Status</th>
+                <th>Data</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="checkbox" name="amostra" value="1001"></td>
+                <td>1001</td>
+                <td>PRA Classe I</td>
+                <td>Pendente</td>
+                <td>2025-10-01</td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" name="amostra" value="1002"></td>
+                <td>1002</td>
+                <td>PRA Classe II</td>
+                <td>Em andamento</td>
+                <td>2025-10-05</td>
+            </tr>
+            </tbody>
+    </table>
+</section>
+    </main>
+    
+</body>
+<footer>
+    <p>&copy; 2025 IGEN</p>
+</footer>
+</html>
